@@ -1,0 +1,6 @@
+datasets/
+*.npz
+*.pkl
+*.h5
+log/
+checkpoints/
