@@ -1,0 +1,25 @@
+{
+  "individual_feature_file": "../datasets/CharAll_na_rm_huge_train_variableall4_sentiment_full_new.npz",
+  "individual_feature_file_valid": "../datasets/CharAll_na_rm_huge_train_variableall4_sentiment_full_new.npz",
+  "individual_feature_file_test": "../datasets/CharAll_na_rm_huge_train_variableall4_sentiment_full_new.npz",
+  "macro_feature_file": "",
+  "macro_feature_file_valid": "",
+  "macro_feature_file_test": "",
+  "sub_epoch": false,
+  "macro_idx": [],
+  "macro_feature_dim": 0,
+  "individual_feature_dim": 14,
+  "num_layers": 1,
+  "hidden_dim": [
+    64
+  ],
+  "dropout": 0.95,
+  "mode": "evaluate",
+  "num_epochs":520,
+  "loss_factor": 1.0,
+  "weighted_loss": false,
+  "optimizer": "Adam",
+  "learning_rate": 0.01,
+  "reg_l1": 0.0,
+  "reg_l2": 0.001
+}
