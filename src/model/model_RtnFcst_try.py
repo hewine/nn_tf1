@@ -3,8 +3,7 @@ import os
 import time
 import matplotlib.pyplot as plt
 import numpy as np
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
+import tensorflow as tf
 from matplotlib import cm
 from mpl_toolkits.mplot3d import Axes3D
 from tensorflow.python.layers.core import Dense

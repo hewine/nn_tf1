@@ -1,8 +1,7 @@
 import os
 import json
 import numpy as np
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
+import tensorflow as tf
 import multiprocessing as mp
 import matplotlib.pyplot as plt
 import csv

@@ -1,8 +1,7 @@
 import sys
 import numpy as np
 import json
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
+import tensorflow as tf
 import os
 import pickle
 from pathlib import Path
