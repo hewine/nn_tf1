@@ -44,7 +44,7 @@ def run_code(train_lists):
 		for i in range(3): 
 			[train_idx_list, valid_idx_list, test_idx_list] = final_list[i]  
 			deco_print('Creating data layer')
-			logdir = FLAGS.logdir+ "/Users_Train/chronological_order/Train_fold_"+str(folder_idx)+'/fullnew' + str(start_chara)+ str(end_chara)+ str(num_layers)+ str(hidden_dim[0]) + str(dropout)+ str(l1_penalty)+ str(l2_penalty)+ str(lr)+ model_selection+ 'Testorder'+str(i)  
+			logdir = FLAGS.logdir+ "/chronological_order/Train_fold_"+str(folder_idx)+'/fullnew' + str(start_chara)+ str(end_chara)+ str(num_layers)+ str(hidden_dim[0]) + str(dropout)+ str(l1_penalty)+ str(l2_penalty)+ str(lr)+ model_selection+ 'Testorder'+str(i)  
 			dl = data_layer_cross.DataInRamInputLayer(
 				config['individual_feature_file'],train_idx_list , subset)
 			dl_valid = data_layer_cross.DataInRamInputLayer(

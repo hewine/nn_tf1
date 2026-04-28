@@ -50,7 +50,7 @@ def run_code(train_lists):
         
         deco_print('Creating data layer')
         if 'new' in config['individual_feature_file']:  
-            logdir = FLAGS.logdir + "/Users_Train/rolling_window/Train_fold_"+str(folder_idx) +"/" +  str(year) +str(start_chara)+ str(end_chara)+ str(num_layers)+ str(hidden_dim[0]) + str(dropout)+ str(l1_penalty)+ str(l2_penalty)+ str(lr)+ model_selection+ 'Test'
+            logdir = FLAGS.logdir + "/rolling_window/Train_fold_"+str(folder_idx) +"/" +  str(year) +str(start_chara)+ str(end_chara)+ str(num_layers)+ str(hidden_dim[0]) + str(dropout)+ str(l1_penalty)+ str(l2_penalty)+ str(lr)+ model_selection+ 'Test'
 
         dl = data_layer_cross.DataInRamInputLayer(
             config['individual_feature_file'],train_idx_list , subset)
