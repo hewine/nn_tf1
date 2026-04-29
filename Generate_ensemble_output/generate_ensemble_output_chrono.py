@@ -86,7 +86,7 @@ def main(_):
 # 				for num_k, k_name in enumerate(plot_list): 
 # 					model.plotConditionalReturn(sess, dl_test, str(plot_idx), 4, k_name, macro_variable, plotPath='plots/', figsize=(8,6), name = str(start_chara)+str(end_chara)+str(len(subset)), cross_idx = i, basedir = basedir)
 		### Save model's output.                   
-		np.savez('../result_saved/chronological_order/output_all_verify_order_'+str(start_chara)+str(end_chara)+str(len(subset))+'.npz', residual_all = residual_all, R_all = R_all, mask_all = mask_all, Rhat_all = Rhat_all)
+		np.savez('../result_saved/chronological_order/output_all_order_'+str(start_chara)+str(end_chara)+str(len(subset))+'.npz', residual_all = residual_all, R_all = R_all, mask_all = mask_all, Rhat_all = Rhat_all)
 
 if __name__ == '__main__':
 	tf.app.run()

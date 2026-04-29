@@ -107,7 +107,7 @@ def main(_):
 # 			basedir = '../result_saved/random_sampling/parsimonious/'
 # 			model.plot2DConditionalReturn(sess, dl_test, 'flow', 'F_r12_2', 'sentiment', cross_idx = i, basedir = basedir) 
 		### Save model's output.                   
-		np.savez('../result_saved/random_sampling/output_all_verify_'+str(start_chara)+str(end_chara)+str(len(subset))+'.npz', residual_all = residual_all, R_all = R_all, mask_all = mask_all, Rhat_all = Rhat_all)
+		np.savez('../result_saved/random_sampling/output_all_'+str(start_chara)+str(end_chara)+str(len(subset))+'.npz', residual_all = residual_all, R_all = R_all, mask_all = mask_all, Rhat_all = Rhat_all)
 
 if __name__ == '__main__':
 	tf.app.run()

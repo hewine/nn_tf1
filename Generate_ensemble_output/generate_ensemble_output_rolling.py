@@ -75,7 +75,7 @@ def main(_):
             directory_all+= directories 
 
 
-        np.savez('../result_saved/rolling_window/output_all_rolling_verify_'+str(start_chara)+str(end_chara)+str(len(subset))+'.npz', residual_all = residual_all, R_all = R_all, mask_all = mask_all, Rhat_all = Rhat_all)
+        np.savez('../result_saved/rolling_window/output_all_rolling_'+str(start_chara)+str(end_chara)+str(len(subset))+'.npz', residual_all = residual_all, R_all = R_all, mask_all = mask_all, Rhat_all = Rhat_all)
 
 
 if __name__ == '__main__':
